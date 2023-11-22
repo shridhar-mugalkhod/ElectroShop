@@ -1,0 +1,75 @@
+<!-- Contact Us Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>ElectroShop - Contact Us</title>
+</head>
+<body>
+
+    <header class="header">
+        <img src="./Images/logo-no-background.svg" alt="ElectroShop Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="about-us.html">About Us</a>
+            <a href="contact-us.html">Contact Us</a>
+        </nav>
+    </header>
+    
+    <section class="contact-container">
+        <div class="contact-form contact-card">
+            <h2>Contact Us</h2>
+            <form id="contactForm" onsubmit="submitForm(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="map contact-card">
+            <h2>Headquarter</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15550.729342517892!2d77.70562471579325!3d12.992158306695725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11fb44001d6d%3A0x600e3e9698db2d17!2sInternational%20Tech%20Park%20Bangalore(ITPB)!5e0!3m2!1sen!2sin!4v1700656098011!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </section>
+
+    <div class="visit-stores contact-card">
+        <h2>Visit Our Stores</h2>
+        <div class="store-address">
+            <div>
+                <p><strong>Store 1:</strong></p>
+                <p>International Tech Park Bangalore,</p>
+                <p>Whitefield, Bangalore, 560066</p>
+            </div>
+            <div>
+                <p><strong>Store 2:</strong></p>
+                <p>G1-G2, Jio World Drive
+                    Bandra Kurla Complex
+                    Mumbai,</p>
+                <p> Maharashtra, 400051</p>
+            </div>
+            
+            <div>
+                <p><strong>Store 3:</strong></p>
+                <p>F-11, Select CITYWALK
+                    District Centre, Saket
+                    </p>
+                <p>New Delhi, Delhi, 110017</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 ElectroShop</p>
+    </footer>
+
+</body>
+</html>

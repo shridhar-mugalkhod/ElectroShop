@@ -1,0 +1,379 @@
+/* Common Header Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 60px 0 0;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    overflow-y: scroll; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+.logo {
+    width: 50px; 
+    height: auto; 
+    margin-left: 10px; 
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    flex-grow: 1;
+    padding: 1rem 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.footer {
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    background: #f4f5f7;
+    margin-top: auto;
+  }
+
+/* Home Page Styles */
+
+.carousel {
+    overflow: hidden;
+    direction: ltr;
+    display: -webkit-inline-box;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    align-items: center;
+}
+
+.mini-product {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1rem 0;
+    padding: 30px;
+}
+
+.section {
+    text-align: center;
+}
+
+.mini-product {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.product img {
+    width: 300px;
+    height: 130px;
+    margin-bottom: 0.5rem;
+}
+
+.talk-to-expert {
+    padding: 30px;
+    text-align: center;
+    margin: 1rem 0;
+}
+.talk-to-expert button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.talk-to-expert button:hover {
+    background-color: #2980b9;
+}
+
+.expert-info {
+    margin-bottom: 1rem;
+}
+
+/* Products Page Styles */
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-card {
+    width: 200px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-details button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.product-details button:hover {
+    background-color: #218c53;
+}
+
+.product-detail-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.detail-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.product-details {
+    text-align: center;
+}
+
+/* About Us Page Styles */
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-us {
+    padding: 30px;
+    text-align: center;
+}
+
+.about-us .section {
+    margin-bottom: 40px;
+}
+
+.about-us p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.about-us ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-us ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.timeline {
+    position: relative;
+}
+
+.event {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.event-date {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    margin-top: 35px;
+}
+
+.event-year {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.event-description {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+/* Contact Page Styles */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact-card {
+    flex: 1;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-form,
+.map {
+    width: 48%; 
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.contact-form textarea {
+    resize: vertical; 
+}
+
+.contact-form button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #2980b9;
+}
+
+.map iframe {
+    width: 100%;
+    height: 400px; 
+}
+
+.map h2 {
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.visit-stores h2 {
+    text-align: center;;
+}
+.store-address {
+    display: flex;
+    justify-content: space-between;
+}
+
+.store-address div {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.store-address p {
+    margin: 0;
+    color: #333;
+}
+
+.store-address strong {
+    color: #3498db;
+    font-weight: bold;
+}

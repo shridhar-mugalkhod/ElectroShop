@@ -1,0 +1,68 @@
+<!-- Product Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>ElectroShop - Products</title>
+</head>
+<body>
+
+    <header class="header">
+        <img src="./Images/logo-no-background.svg" alt="ElectroShop Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="about-us.html">About Us</a>
+            <a href="contact-us.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <section class="product-list" id="productListings">
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 ElectroShop</p>
+    </footer>
+
+    <script defer src="script.js"></script>
+    <script defer>
+        document.addEventListener('DOMContentLoaded', fetchAndDisplayProducts);
+
+        function fetchAndDisplayProducts() {
+            const productListings = document.getElementById('productListings');
+
+            fetch('https://fakestoreapi.com/products/category/electronics')
+                .then(response => response.json())
+                .then(products => {
+                    products.forEach(product => {
+                        const productCard = createProductCard(product);
+                        productListings.appendChild(productCard);
+                    });
+                })
+                .catch(error => console.error('Error fetching products:', error));
+        }
+
+        function createProductCard(product) {
+            const productCard = document.createElement('div');
+            productCard.classList.add('product-card');
+            productCard.innerHTML = `
+                <img src="${product.image}" alt="${product.title}">
+                <div class="product-details">
+                    <h3>${product.title}</h3>
+                    <p>${product.price}</p>
+                    <button onclick="displayProductDetail(${product.id})">View Details</button>
+                </div>
+            `;
+            return productCard;
+        }
+
+        function displayProductDetail(productId) {
+            window.location.href = `product-detail.html?id=${productId}`;
+        }
+    </script>
+
+</body>
+</html>
